@@ -138,6 +138,16 @@ class Session
      *
      * @param string $url url of the page
      */
+    public function post($url, $parameters = array())
+    {
+        $this->driver->post($url, $parameters);
+    }
+
+    /**
+     * Visit specified URL.
+     *
+     * @param string $url url of the page
+     */
     public function visit($url)
     {
         $this->driver->visit($url);
